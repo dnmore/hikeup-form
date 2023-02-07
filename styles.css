@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: rgb(7, 2, 63);
+}
+
+#hero {
+  background: url("images/mountains-hero.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 50rem;
+  opacity: 0.9;
+}
+
+section {
+  width: 50rem;
+  display: flex;
+  position: relative;
+  top: 5rem;
+  left: 5rem;
+  padding: 2rem;
+  background-color: rgb(231, 243, 245);
+}
+
+#img-content {
+  width: 25rem;
+}
+
+#img-content img {
+  height: 28rem;
+  width: 25rem;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#form-content {
+  width: 25rem;
+  margin-left: 1rem;
+}
+
+#form-content ul {
+  list-style: none;
+}
+
+#form-content li {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+#form-content h2 {
+  font: inherit;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+label {
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+input {
+  display: block;
+  margin-top: 0.2rem;
+  background-color: aliceblue;
+  border: 1px solid rgb(59, 152, 234);
+  border-radius: 2px;
+  padding: 0.2rem;
+  width: 22rem;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+}
+
+input:focus {
+  background-color: rgb(218, 234, 248);
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+.form-control-inline input {
+  margin: 0 0.5rem 0 0;
+  width: auto;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(1, 10, 55);
+  border: 1px solid rgb(1, 10, 55);
+  color: azure;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: rgb(3, 18, 93);
+  border: 1px solid rgb(3, 18, 93);
+}
+
+p {
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+strong {
+  color: rgb(7, 79, 163);
+  font-weight: bold;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+a {
+  cursor: pointer;
+  color: rgb(7, 79, 163);
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+}
+
+a:hover {
+  border-bottom: 1px solid rgb(7, 79, 163);
+}
+
+.terms {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 48rem) {
+  #hero {
+    height: 75rem;
+  }
+
+  section {
+    flex-direction: column;
+    width: 25rem;
+  }
+
+  #form-content {
+    margin-top: 1rem;
+  }
+}
