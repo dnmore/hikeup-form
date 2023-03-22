@@ -1,0 +1,24 @@
+{
+  "name": "webpage-form",
+  "version": "1.0.0",
+  "description": "***",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./css/style.css --minify ",
+    "watch": "npx tailwindcss -i ./input.css -o ./css/style.css --watch --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnmore/hikeup-form.git"
+  },
+  "keywords": [],
+  "author": "Diana Moretti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dnmore/hikeup-form/issues"
+  },
+  "homepage": "https://github.com/dnmore/hikeup-form#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

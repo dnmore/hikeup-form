@@ -4,60 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Hike Up | Community</title>
-  </head>
-  <body>
-    <main>
-        <div id="hero">
-<section>
-    <div id="img-content">
-<img src="images/hikers.jpeg" alt="">
-    </div>
-    <div id="form-content">
-<form action="/" method="get">
-    
 
-<ul>
-    <li><h2>Create your account</h2></li>
-    <li>
-        <label for="firstname">Your Name</label>
-        <input type="text" name="first-name" id="firstname" required>
-    </li>
-    <li>
-        <label for="emailaddress">Your email address</label>
-        <input type="email" name="email-address" id="emailaddress" required>
-    </li>
-    <li>
-        <label for="userpassword">Password</label>
-        <input type="password" name="user-password" id="userpassword" required>
-    </li>
-    <li>
-        <label for="confirmpassword">Confirm password</label>
-        <input type="password" name="confirm-password" id="confirmpassword" required>
-    </li>
-    <li class="form-control-inline">
-        <input type="checkbox" name="remember-user" id="rememberuser">
-        <label for="rememberuser">Remember me</label>
-    </li>
-    <li>
-        <button type="submit">Create new</button>
-    </li>
-    
-    <li><p>Already have an account? <strong> <a href="/">Sign In</a></strong></p></li>
-    
-    <li class="terms"><p>By clicking Sign Up you agree to the <a href="/">Terms</a> and <a href="/">Privacy Policy</a></p></li>
-</ul>
-    
-</form>
-    </div>
-</section>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Web Form</title>
+  </head>
+  <body
+    class="p-8 h-screen font-serif text-center text-base text-slate-800 bg-gradient-to-tr from-fuchsia-500 to-indigo-500"
+  >
+    <main>
+      <div class="container py-4">
+        <div class="flex flex-col justify-center md:flex-row ">
+          <div class="w-80 shadow-gray-700 shadow-xl">
+            <img
+              src="images/hikers.jpeg"
+              alt="hikers"
+              class="h-full object-cover"
+            />
+          </div>
+
+          <div class="bg-slate-100 w-80 shadow-gray-700 shadow-xl">
+            <form class="w-full p-6">
+              <h1 class="font-bold text-xl uppercase mb-2">
+                Create your account
+              </h1>
+              <p class="italic mb-4">
+                Don't have an account? Create your account, it takes less than a
+                minute!
+              </p>
+
+              <input
+                type="text"
+                name="user-name"
+                id="name"
+                placeholder="Name"
+                class="block border-slate-500 mx-auto mb-2 placeholder:italic placeholder:text-slate-400 bg-white w-full border focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 rounded-md py-2 pl-6 pr-3"
+                required
+              />
+
+              <input
+                type="email"
+                name="email-address"
+                id="emailaddress"
+                placeholder="E-mail address"
+                class="block border-slate-500 mx-auto mb-2 placeholder:italic placeholder:text-slate-400 bg-white w-full border focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 rounded-md py-2 pl-6 pr-3"
+                required
+              />
+
+              <input
+                type="password"
+                name="user-password"
+                id="userpassword"
+                placeholder="Password"
+                class="block border-slate-500 mx-auto mb-2 placeholder:italic placeholder:text-slate-400 bg-white w-full border focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 rounded-md py-2 pl-6 pr-3"
+                required
+              />
+
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirmpassword"
+                placeholder="Confirm password"
+                class="block border-slate-500 mx-auto mb-2 placeholder:italic placeholder:text-slate-400 bg-white w-full border focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 rounded-md py-2 pl-6 pr-3"
+                required
+              />
+
+              <div class="flex-col">
+                <div class="flex">
+                  <input
+                    type="checkbox"
+                    name="remember-user"
+                    id="rememberuser"
+                    class="checked:bg-blue-500"
+                  />
+                  <label for="rememberuser" class="ml-2">Remember me</label>
+                </div>
+                <button
+                  class="py-2 px-6 bg-sky-600 hover:bg-sky-500 text-lime-100 uppercase rounded block mx-auto my-2"
+                >
+                  Sign up
+                </button>
+              </div>
+
+              <p class="mt-6">
+                Already have an account?
+                <a class="text-cyan-900 hover:text-cyan-700 cursor-pointer"
+                  >Sign In</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

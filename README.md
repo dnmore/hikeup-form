@@ -1,22 +1,6 @@
-# HikeUp Lading Page
+# WebForm
 ***
-
-## Description
-Sample of a landing page with form
-
-## Scope
-Practice
-
-## Code
-* HTML 
-* CSS
-
-## Features
-* Hero image
-* Flex
-* Card
-* Form
-* Responsive
+Landing page with webform
 
 ## License
 MIT
