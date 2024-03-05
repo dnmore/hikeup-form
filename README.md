@@ -1,9 +1,9 @@
-# WebForm
+# Tailwindcss Form
 ***
-Tamplate for creating a registration form. Designed with the utility classes from Tailwind CSS.
+Registration form designed with the utility classes from Tailwind CSS.
 
 ### Screenshot
-![Full preview of the page](/template-form.png)
+![Full preview of the page](/preview.PNG)
 
 ## License
 MIT

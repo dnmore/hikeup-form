@@ -6,91 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <title>Web Form</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+
+    <title>Registration Form</title>
   </head>
-  <body
-    class="p-8 h-screen font-serif text-center text-base text-slate-800 bg-gradient-to-tr from-fuchsia-500 to-indigo-500"
-  >
+  <body class="bg-violet-50">
     <main>
-      <div class="container py-4">
-        <div class="flex flex-col justify-center md:flex-row ">
-          <div class="w-80 shadow-gray-700 shadow-xl">
+
+      <!-- ### CARD CONTAINER ###-->
+      <div
+        class="max-w-md mx-auto bg-white my-10 rounded-xl shadow-2xl shadow-slate-400 overflow-hidden md:max-w-2xl"
+      >
+
+      <!-- ### CARD CONTENT ### -->
+        <div class="md:flex">
+
+          <!--### CARD IMAGE ###-->
+          <div class="md:shrink-0">
             <img
-              src="images/hikers.jpeg"
-              alt="hikers"
-              class="h-full object-cover"
+              class="h-96 w-full object-cover md:h-full md:w-48"
+              src="https://cdn.pixabay.com/photo/2019/08/22/14/14/mountains-4423621_1280.jpg"
+              alt="Modern building architecture"
             />
           </div>
 
-          <div class="bg-slate-100 w-80 shadow-gray-700 shadow-xl">
-            <form class="w-full p-6">
-              <h1 class="font-bold text-xl uppercase mb-2">
-                Create your account
-              </h1>
-              <p class="italic mb-4">
-                Don't have an account? Create your account, it takes less than a
-                minute!
-              </p>
+          <!--### CARD TEXT ###-->
+          <div class="px-8 py-5">
 
-              <input
-                type="text"
-                name="user-name"
-                id="name"
-                placeholder="Name"
-                class="block border-slate-500 mx-auto mb-2 placeholder:italic placeholder:text-slate-400 bg-white w-full border focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 rounded-md py-2 pl-6 pr-3"
-                required
-              />
+            <!--### HEADING ###-->
+            <div
+              class="uppercase tracking-wide text-xl text-sky-500 font-semibold"
+            >
+              Don't have an account?
+            </div>
+            <p class="mt-2 text-sm text-slate-500">It takes less than 2 minutes</p>
 
-              <input
-                type="email"
-                name="email-address"
-                id="emailaddress"
-                placeholder="E-mail address"
-                class="block border-slate-500 mx-auto mb-2 placeholder:italic placeholder:text-slate-400 bg-white w-full border focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 rounded-md py-2 pl-6 pr-3"
-                required
-              />
-
-              <input
-                type="password"
-                name="user-password"
-                id="userpassword"
-                placeholder="Password"
-                class="block border-slate-500 mx-auto mb-2 placeholder:italic placeholder:text-slate-400 bg-white w-full border focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 rounded-md py-2 pl-6 pr-3"
-                required
-              />
-
-              <input
-                type="password"
-                name="confirm-password"
-                id="confirmpassword"
-                placeholder="Confirm password"
-                class="block border-slate-500 mx-auto mb-2 placeholder:italic placeholder:text-slate-400 bg-white w-full border focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 rounded-md py-2 pl-6 pr-3"
-                required
-              />
-
-              <div class="flex-col">
-                <div class="flex">
-                  <input
-                    type="checkbox"
-                    name="remember-user"
-                    id="rememberuser"
-                    class="checked:bg-blue-500"
-                  />
-                  <label for="rememberuser" class="ml-2">Remember me</label>
+            <!--### FORM ###-->
+            <form>
+              <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-6">
+                <div class="sm:col-span-3">
+                  <label
+                    for="first-name"
+                    class="block text-sm font-medium leading-6 text-gray-900"
+                    >First name</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      autocomplete="given-name"
+                      class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
+                    />
+                  </div>
                 </div>
-                <button
-                  class="py-2 px-6 bg-sky-600 hover:bg-sky-500 text-lime-100 uppercase rounded block mx-auto my-2"
-                >
-                  Sign up
-                </button>
+
+                <div class="sm:col-span-3">
+                  <label
+                    for="last-name"
+                    class="block text-sm font-medium leading-6 text-gray-900"
+                    >Last name</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      autocomplete="family-name"
+                      class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-span-full">
+                  <label
+                    for="email"
+                    class="block text-sm font-medium leading-6 text-gray-900"
+                    >Email address</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+                    />
+                  </div>
+                </div>
+
+                <div class="sm:col-span-3">
+                  <label
+                    for="password"
+                    class="block text-sm font-medium leading-6 text-gray-900"
+                    >Password</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      autocomplete="password"
+                      minlength="8"
+                      placeholder="minimum 8 characters"
+                      class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+                    />
+                  </div>
+                </div>
+
+                <div class="sm:col-span-3">
+                  <label
+                    for="confirm-password"
+                    class="block text-sm font-medium leading-6 text-gray-900"
+                    >Confirm Password</label
+                  >
+                  <div class="mt-2">
+                    <input
+                      type="password"
+                      name="confirm-password"
+                      id="confirm-password"
+                      autocomplete="confirm-password"
+                      minlength="8"
+                      class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 nvalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+                    />
+                  </div>
+                </div>
               </div>
 
-              <p class="mt-6">
-                Already have an account?
-                <a class="text-cyan-900 hover:text-cyan-700 cursor-pointer"
-                  >Sign In</a
+              <div class="mt-6 flex items-center justify-end gap-x-6">
+                <button
+                  type="button"
+                  class="text-sm font-semibold leading-6 text-gray-900"
                 >
-              </p>
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  class="rounded-md bg-sky-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+                >
+                  Save
+                </button>
+              </div>
             </form>
           </div>
         </div>
